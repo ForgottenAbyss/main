@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #050508; /* Fast Schwarz/Abyss Blau */
+    background-color: #050508;
     color: #d1d1d1;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -90,5 +90,6 @@ input, textarea {
     font-size: 1rem;
     border-radius: 4px;
 }
+
 
 input:focus, textarea:focus { border-color: #c9a86a; outline: none; }
