@@ -163,20 +163,40 @@ input, textarea {
 }
 
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        margin-top: 10px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.75rem;
+    }
+
     .hero h1 {
         font-size: 2.2rem !important;
     }
+
     .info-grid {
-        grid-template-columns: 1fr !important;
         display: flex !important;
         flex-direction: column !important;
     }
+
     .info-box {
         width: 100% !important;
-        margin-bottom: 20px;
-    }
-    nav ul {
-        display: none; 
     }
 }
+
 
