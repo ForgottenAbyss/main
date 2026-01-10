@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgotten Abyss | Official Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Forgotten Abyss</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#apply">Apply</a></li>
+            <li><a href="DEIN_GAME_LINK" target="_blank">Play</a></li>
+            <li><a href="DEIN_DISCORD_LINK" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero">
+            <h1>Forgotten Abyss</h1>
+            <p>Descend into the darkness. Fight for survival. Conquer the depths.</p>
+            <div class="social-links">
+                <a href="DEIN_ROBLOX_GRUPPEN_LINK" class="btn outline">Roblox Group</a>
+                <a href="DEIN_TWITTER_LINK" class="btn outline">Twitter/X</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="info">
+        <div class="container">
+            <h2>Moderator Recruitment</h2>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>What we expect</h3>
+                    <ul>
+                        <li>Active presence on Discord & in-game</li>
+                        <li>Respectful and calm behavior</li>
+                        <li>Ability to resolve conflicts fairly</li>
+                        <li>Knowledge of server rules</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3>What we offer</h3>
+                    <ul>
+                        <li>A place in a growing dev-team</li>
+                        <li>Special staff roles & permissions</li>
+                        <li>Direct impact on the community</li>
+                        <li>Chance to promote to Admin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply">
+        <div class="form-container">
+            <h2>Moderator Application</h2>
+            <form id="applyForm">
+                <input type="text" id="username" placeholder="Roblox Username & Discord Tag" required>
+                <input type="number" id="age" placeholder="Your Age" required>
+                <textarea id="about" placeholder="Tell us a bit about yourself..." rows="4" required></textarea>
+                <textarea id="reason" placeholder="Why do you want to be a Moderator for Forgotten Abyss?" rows="5" required></textarea>
+                
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const form = document.getElementById('applyForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const webhookURL = "DEINE_WEBHOOK_URL_HIER";
+
+            const payload = {
+                embeds: [{
+                    title: "🛡️ New Moderator Application",
+                    color: 2123412, // Ein dunkler Abyss-Farbton
+                    fields: [
+                        { name: "User", value: document.getElementById('username').value, inline: true },
+                        { name: "Age", value: document.getElementById('age').value, inline: true },
+                        { name: "About", value: document.getElementById('about').value },
+                        { name: "Reasoning", value: document.getElementById('reason').value }
+                    ],
+                    footer: { text: "Forgotten Abyss Recruitment" },
+                    timestamp: new Date()
+                }]
+            };
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            }).then(() => {
+                alert('Thank you! Your application has been sent to the depths (our staff channel).');
+                form.reset();
+            }).catch(err => {
+                alert('Error sending application.');
+                console.error(err);
+            });
+        });
+    </script>
+</body>
+</html>
