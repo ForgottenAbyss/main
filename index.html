@@ -14,8 +14,8 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#apply">Apply</a></li>
-            <li><a href="DEIN_GAME_LINK" target="_blank">Play</a></li>
-            <li><a href="DEIN_DISCORD_LINK" target="_blank">Discord</a></li>
+            <li><a href="GAME_LINK" target="_blank">Play (Soon)</a></li>
+            <li><a href="https://discord.gg/7W4RD4wBwD" target="_blank">Discord</a></li>
         </ul>
     </nav>
 
@@ -24,8 +24,8 @@
             <h1>Forgotten Abyss</h1>
             <p>Descend into the darkness. Fight for survival. Conquer the depths.</p>
             <div class="social-links">
-                <a href="DEIN_ROBLOX_GRUPPEN_LINK" class="btn outline">Roblox Group</a>
-                <a href="DEIN_TWITTER_LINK" class="btn outline">Twitter/X</a>
+                <a href="https://www.roblox.com/communities/52821054/Forgotten-Abyss-DQ#!/about" class="btn outline">Roblox Group</a>
+                <a href="https://www.instagram.com/forgotten__abyss/" class="btn outline">Instagram</a>
             </div>
         </div>
     </header>
@@ -75,12 +75,12 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const webhookURL = "DEINE_WEBHOOK_URL_HIER";
+            const webhookURL = "https://forgottenabyss.nfhplayz.workers.dev/";
 
             const payload = {
                 embeds: [{
                     title: "🛡️ New Moderator Application",
-                    color: 2123412, // Ein dunkler Abyss-Farbton
+                    color: 2123412,
                     fields: [
                         { name: "User", value: document.getElementById('username').value, inline: true },
                         { name: "Age", value: document.getElementById('age').value, inline: true },
@@ -106,4 +106,5 @@
         });
     </script>
 </body>
+
 </html>
