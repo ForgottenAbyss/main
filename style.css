@@ -85,14 +85,34 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
-    transition: 0.3s;
     border: 2px solid #c9a86a;
     display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover{
+    background: #fff;
+    broder-color: #fff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(201, 168, 106, 0.4);
+}
+
+.btn:active {
+    transform: translate(-1px);
+    box-shadow: 0 4px 10px rbga(201, 168, 106, 0.2);
 }
 
 .btn.outline {
-    background: transparent;
+    backgound: transparent;
     color: #c9a86a;
+}
+
+.btn.outline:hover {
+    background: #c9a86a;
+    color: #000
 }
 
 #info {
@@ -198,5 +218,6 @@ input, textarea {
         width: 100% !important;
     }
 }
+
 
 
