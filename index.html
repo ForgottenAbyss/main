@@ -67,9 +67,9 @@
                 <textarea id="s1" placeholder="Scenario: A player is being toxic and insulting others in the chat, but no Senior Staff is online. How do you handle this?" rows="5" required></textarea>
                 <textarea id="s2" placeholder="Scenario: You see a friend of yours breaking the rules. What do you do?" rows="5" required></textarea>
                 <textarea id="s3" placeholder="Scenario: A player is accusing a staff member of abusing their powers. How do you respond to the situation?" rows="5" required></textarea>
-                <textarea id="skill 1" placeholder="What would you say is your greatest strength when dealing with a difficult community?" rows="5" required></textarea>
-                <textarea id="skill 2" placeholder="How do you handle stress or drama within a team?" rows="5" required></textarea>
-                <textarea id="skill 3" placeholder="Do you have experience with Discord permissions and bot management?" rows="5" required></textarea>
+                <textarea id="skill1" placeholder="What would you say is your greatest strength when dealing with a difficult community?" rows="5" required></textarea>
+                <textarea id="skill2" placeholder="How do you handle stress or drama within a team?" rows="5" required></textarea>
+                <textarea id="skill3" placeholder="Do you have experience with Discord permissions and bot management?" rows="5" required></textarea>
                 
                 
                 <button type="submit" class="btn">Submit Application</button>
@@ -89,16 +89,16 @@
                     title: "🛡️ New Moderator Application",
                     color: 2123412,
                     fields: [
-                        { name: "User", value: document.getElementById('username').value, inline: true },
+                        { name: "User", value: document.getElementById('name').value, inline: true },
                         { name: "Age", value: document.getElementById('age').value, inline: true },
                         { name: "Experience", value: document.getElementById('exp').value },
                         { name: "Why us?", value: document.getElementById('reason').value },
                         { name: "A player is being toxic and insulting others in the chat, but no Senior Staff is online. How do you handle this?", value: document.getElementById('s1').value },
                         { name: "You see a friend of yours breaking the rules. What do you do?", value: document.getElementById('s2').value },
                         { name: "A player is accusing a staff member of abusing their powers. How do you respond to the situation?", value: document.getElementById('s3').value },
-                        { name: "What would you say is your greatest strength when dealing with a difficult community?", value: document.getElementById('skill 1').value },
-                        { name: "How do you handle stress or drama within the team?", value: document.getElementById('skill 2').value },
-                        { name: "Do you have experience with Discord permissions and bot management?", value: document.getElementById('skill 3').value },
+                        { name: "What would you say is your greatest strength when dealing with a difficult community?", value: document.getElementById('skill1').value },
+                        { name: "How do you handle stress or drama within the team?", value: document.getElementById('skill2').value },
+                        { name: "Do you have experience with Discord permissions and bot management?", value: document.getElementById('skill3').value },
                         
                         
                         
@@ -141,6 +141,7 @@
 </body>
 
 </html>
+
 
 
 
