@@ -94,25 +94,27 @@ nav ul li a {
 
 .btn:hover {
     background: #fff;
-    border-color: #fff; /* Korrigiert: border-color */
+    border-color: #fff;
     color: #000;
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(201, 168, 106, 0.4);
 }
 
 .btn:active {
-    transform: translate(-1px);
-    box-shadow: 0 4px 10px rgba(201, 168, 106, 0.2); /* Korrigiert: rgba */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(201, 168, 106, 0.2);
 }
 
+/* Die 3 speziellen Buttons im Hero-Bereich */
 .btn.outline {
-    background: transparent; /* Korrigiert: background */
-    color: #c9a86a;
+    background: #c9a86a !important; /* Goldener Hintergrund */
+    color: #000 !important;        /* Schwarze Schrift */
 }
 
 .btn.outline:hover {
-    background: #c9a86a;
-    color: #000;
+    background: #fff !important;   /* Wird weiß beim Hovern */
+    border-color: #fff !important;
+    color: #000 !important;
 }
 
 #info {
