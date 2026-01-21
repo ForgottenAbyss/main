@@ -92,9 +92,9 @@ nav ul li a {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.btn:hover{
+.btn:hover {
     background: #fff;
-    broder-color: #fff;
+    border-color: #fff; /* Korrigiert: border-color */
     color: #000;
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(201, 168, 106, 0.4);
@@ -102,17 +102,17 @@ nav ul li a {
 
 .btn:active {
     transform: translate(-1px);
-    box-shadow: 0 4px 10px rbga(201, 168, 106, 0.2);
+    box-shadow: 0 4px 10px rgba(201, 168, 106, 0.2); /* Korrigiert: rgba */
 }
 
 .btn.outline {
-    backgound: transparent;
+    background: transparent; /* Korrigiert: background */
     color: #c9a86a;
 }
 
 .btn.outline:hover {
     background: #c9a86a;
-    color: #000
+    color: #000;
 }
 
 #info {
@@ -218,6 +218,3 @@ input, textarea {
         width: 100% !important;
     }
 }
-
-
-
